@@ -17,7 +17,9 @@ const gite = [
         dataFine: "2024-08-06",
         partecipanti: [
             { nome: "Luca", cognome: "Verdi", CF: "CF003", telefono: "0021234567" },
-            { nome: "Giulia", cognome: "Neri", CF: "CF004", telefono: "0031234567" }
+            { nome: "Giulia", cognome: "Neri", CF: "CF004", telefono: "0031234567" },
+            { nome: "Antonio", cognome: "Blu", CF: "CF005", telefono: "0101234567" },
+            { nome: "Giorgia", cognome: "Bianchi", CF: "CF006", telefono: "0111234567" }
         ]
     },
 
