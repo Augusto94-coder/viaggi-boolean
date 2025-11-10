@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand bg-dark navbar-dark">
       <div className="container">
         <div className="navbar-nav">
-          <NavLink className="nav-link" to="/">Viaggi Boolean</NavLink>
+          <NavLink className="nav-link fw-bold" to="/">Viaggi Boolean</NavLink>
         </div>
       </div>
     </nav>

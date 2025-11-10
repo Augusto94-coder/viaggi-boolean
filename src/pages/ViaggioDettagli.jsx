@@ -11,7 +11,7 @@ export default function ViaggioDettagli() {
         <div className="alert alert-danger d-flex align-items-center" role="alert">
           <div>Viaggio non trovato.</div>
         </div>
-        <Link className="btn btn-secondary" to="/">Torna alla Home</Link>
+        <Link className="btn btn-outline-secondary" to="/">← Home</Link>
       </div>
     );
   }
@@ -25,10 +25,11 @@ export default function ViaggioDettagli() {
         <Link className="btn btn-outline-secondary" to="/">← Home</Link>
       </div>
 
-      <p className="text-muted mb-4">
-        <strong>Città:</strong> {viaggio.città} &nbsp;|&nbsp; 
-        <strong>Periodo:</strong> {viaggio.dataInizio} – {viaggio.dataFine}
-      </p>
+      <div className="rounded-2xl shadow-soft p-3 bg-gradient-chip mb-3">
+        <span className="me-3"><strong>Città:</strong> {viaggio.città}</span>
+        <span className="me-3"><strong>Periodo:</strong> {viaggio.dataInizio} – {viaggio.dataFine}</span>
+        <span><strong>Viaggiatori:</strong> {viaggio.partecipanti.length}</span>
+      </div>
 
       <div className="accordion" id={accId}>
         {viaggio.partecipanti?.map((p, i) => {
@@ -61,6 +62,7 @@ export default function ViaggioDettagli() {
                     <li><strong>Nome:</strong> {p.nome}</li>
                     <li><strong>Cognome:</strong> {p.cognome}</li>
                     <li><strong>CF:</strong> {p.CF}</li>
+                    <li><strong>Telefono:</strong> {p.telefono}</li>
                   </ul>
                 </div>
               </div>

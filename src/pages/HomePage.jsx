@@ -4,16 +4,16 @@ import CardViaggi from "../components/CardViaggi";
 export default function HomePage() {
   return (
     <div className="container py-4">
-      <h1 className="mb-4">Gite organizzate</h1>
+      <h1 className="mb-2">Gite organizzate</h1>
+      <p className="text-muted mt-4 mb-4 bg-gradient-chip rounded-2xl px-3 py-2 d-inline-block">
+        Scopri le prossime partenze e i dettagli dei partecipanti
+      </p>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-        {gite.map((g, idx) => (
+        {gite.map((gita, index) => (
           <CardViaggi
-            key={idx}
-            id={idx}
-            nome={g.nome}
-            città={g.città}
-            dataInizio={g.dataInizio}
-            dataFine={g.dataFine}
+            key={index}
+            id={index}
+            gita={gita}
           />
         ))}
       </div>
