@@ -1,5 +1,6 @@
 import gite from "../data/gite";
 import CardViaggi from "../components/CardViaggi";
+import FormAggiuntaViaggi from "../components/FormAggiuntaViaggi";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,8 @@ export default function HomePage() {
           />
         ))}
       </div>
+        <FormAggiuntaViaggi />
+
     </div>
   );
 }
