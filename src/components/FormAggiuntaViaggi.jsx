@@ -34,7 +34,7 @@ export default function FormAggiuntaViaggi() {
     }
 
     return (
-        <div className="container my-4 ">
+        <div className="my-4">
             <div className="accordion" id="accordionViaggi">
                 <div className="accordion-item">
                     <h2 className="accordion-header bg-gradient-chip" id="headingForm">
